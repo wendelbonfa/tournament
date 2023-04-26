@@ -1,0 +1,53 @@
+.form_custom {
+  display: inline-flex;
+}
+
+.label_custom{}
+
+.form-group-custom{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#main_form{
+  background: #f0f1f3;
+  margin-top: 30px;
+  border-style: groove;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#presentation_order{
+  padding: 30px;
+}
+
+.alert-info {
+  margin-top: 30px;
+}
+
+#login_ul {
+  width: 100%;
+  display: block;
+}
+
+#logged_menu{
+  padding-left: 10px;
+  background-color: black;
+}
+
+#login_li {
+  float: right;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  width: 100% !important;
+}
+
+.checkbox {
+  margin: 5px;
+}
+
+.choices__inner {
+  border: 1px solid #979797;
+}

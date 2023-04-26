@@ -1,0 +1,31 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Activation email sent" %}{% endblock %}
+
+{% block content %}
+<div class="row align-items-start">
+    <div class="col-0 col-sm-4 col-md-4" >
+    </div>
+    <div class="col-12 col-sm-4 col-md-4" >
+        <center>
+            <div class="alert alert-info custom-alert" role="alert">
+                <p>Verifique seu e-mail para concluir o processo de registro.</p>
+            </div>
+        </center>
+    </div>
+    <div class="col-0 col-sm-4 col-md-4" >
+    </div>
+</div> 
+
+{% endblock %}
+
+
+{% comment %}
+**registration/registration_complete.html**
+
+Used after successful completion of the registration form. This
+template has no context variables of its own, and should simply inform
+the user that an email containing account-activation information has
+been sent.
+{% endcomment %}

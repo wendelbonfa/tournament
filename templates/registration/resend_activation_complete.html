@@ -1,0 +1,35 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Account Activation Resent" %}{% endblock %}
+
+{% block content %}
+<div class="row align-items-start">
+  <div class="col-0 col-sm-4 col-md-4" >
+  </div>
+  <div class="col-12 col-sm-4 col-md-4" >
+      <center>
+          <div class="alert alert-info custom-alert" role="alert">
+              <p>
+                {% blocktrans %}
+                We have sent an email to {{ email }} with further instructions.
+                {% endblocktrans %}
+              </p>
+          </div>
+      </center>
+  </div>
+  <div class="col-0 col-sm-4 col-md-4" >
+  </div>
+</div> 
+
+{% endblock %}
+
+
+{% comment %}
+**registration/resend_activation_complete.html**
+Used after form for resending account activation is submitted. By default has
+the following context:
+
+``email``
+    The email address submitted in the resend activation form.
+{% endcomment %}

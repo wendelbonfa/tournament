@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -75,10 +76,13 @@ WSGI_APPLICATION = 'tournament.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': "vyfrxvxt",
+        'USER': "vyfrxvxt",
+        'PASSWORD': 'QsWUNtpZ1svSo5JJ8cVFd7KZVuCkOrmc',
+        'HOST': "balarama.db.elephantsql.com"
     }
-}
+} 
 
 
 # Password validation

@@ -1,0 +1,38 @@
+{% load i18n %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{ site.name }} {% trans "admin approval" %}</title>
+</head>
+
+<body>
+    <div class="row align-items-start">
+        <div class="col-0 col-sm-4 col-md-4" >
+        </div>
+        <div class="col-12 col-sm-4 col-md-4" >
+          <center>
+            <div class="alert alert-info custom-alert" role="alert">
+                <p>
+                    Sua conta agora está aprovada. Você pode 
+
+                    <a href="http://{{site.domain}}{% url 'auth_login' %}">{% trans "log in." %}</a>
+                </p>
+            </div>
+        </center>
+        </div>
+        <div class="col-0 col-sm-4 col-md-4" >
+        </div>
+    </div>  
+</body>
+
+</html>
+
+
+{% comment %}
+**registration/admin_approve_complete_email.html**
+
+Used after successful account activation. This template has no context
+variables of its own, and should simply inform the user that their
+account is now active.
+{% endcomment %}

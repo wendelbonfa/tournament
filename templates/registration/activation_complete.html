@@ -1,0 +1,35 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Account Activated" %}{% endblock %}
+
+{% block content %}
+<div class="row align-items-start">
+    <div class="col-0 col-sm-4 col-md-4" >
+    </div>
+    <div class="col-12 col-sm-4 col-md-4" >
+      <center>
+        <div class="alert alert-info custom-alert" role="alert">
+            <p>
+                Sua conta agora está ativada.
+                Acesse seu <a class="nav-link" href="/profile">Perfil</a> para finalizar o cadastro
+                {% if not user.is_authenticated %}
+                    Você pode fazer login.
+                {% endif %}
+            </p>
+        </div>
+    </center>
+    </div>
+    <div class="col-0 col-sm-4 col-md-4" >
+    </div>
+</div>  
+{% endblock %}
+
+
+{% comment %}
+**registration/activation_complete.html**
+
+Used after successful account activation. This template has no context
+variables of its own, and should simply inform the user that their
+account is now active.
+{% endcomment %}
